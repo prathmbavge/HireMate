@@ -84,18 +84,18 @@ const Dashboard = () => {
       
       <div className="grid gap-4 md:grid-cols-2">
         <StatCard
-          className="md:col-span-1"
           title="Successful Placements"
           value={stats?.successfulPlacements.toString() || "0"}
           icon={AwardIcon}
           description="Candidates successfully hired"
+          className="md:col-span-1"
         />
         <StatCard
-          className="md:col-span-1"
           title="Shortlisted Candidates"
           value={stats?.shortlistedCandidates.toString() || "0"}
           icon={HandshakeIcon}
           description="Candidates shortlisted for interviews"
+          className="md:col-span-1"
         />
       </div>
     </div>
