@@ -1,4 +1,3 @@
-
 import {
   Card,
   CardContent,
@@ -8,8 +7,12 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CalendarIcon, UsersIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-// Mock data for recent jobs
+interface RecentJobsListProps {
+  className?: string;
+}
+
 const recentJobs = [
   {
     id: "job-1",
@@ -37,9 +40,9 @@ const recentJobs = [
   },
 ];
 
-const RecentJobsList = () => {
+const RecentJobsList = ({ className }: RecentJobsListProps) => {
   return (
-    <Card className="col-span-2">
+    <Card className={cn("col-span-2", className)}>
       <CardHeader>
         <CardTitle>Recent Job Openings</CardTitle>
         <CardDescription>
