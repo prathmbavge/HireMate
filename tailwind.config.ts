@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Recruitment system specific colors
+				recruit: {
+					primary: '#1E6091',
+					secondary: '#2A93D5',
+					accent: '#37CAEC',
+					light: '#E3F4F9',
+					dark: '#0F3854'
 				}
 			},
 			borderRadius: {
