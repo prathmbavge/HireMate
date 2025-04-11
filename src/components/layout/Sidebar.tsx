@@ -17,7 +17,7 @@ const Sidebar = () => {
       <div className="flex h-16 items-center border-b px-4">
         <Link to="/" className="flex items-center gap-2 font-semibold">
           <BriefcaseIcon className="h-6 w-6 text-recruit-primary" />
-          <span>Smart Hire AI</span>
+          <span>HireMate</span>
         </Link>
       </div>
       <div className="flex flex-col gap-2 p-4">
